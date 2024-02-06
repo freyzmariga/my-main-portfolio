@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./mystyle.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Mariga</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> HOME
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> ABOUT
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-edit-alt nav__icon"></i> SKILLS
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> PROJECTS
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> CONTACT ME
+                        </a>
+                    </li>
+                   
+                </ul>
+                <i class="uil uil-times nav__close"  id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change buttons -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+ 
+        </nav>
+
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/godfrey-mariga-8b2bb2133" class="home__social-icon" target="_blank">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/freyzmariga" class="home__social-icon" target="_blank">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/koder_mariga" class="home__social-icon" target="_blank">
+                            <i class="uil uil-instagram"></i> 
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <!-- <svg class="home__blob" id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                            <path fill="#000000" d="M372,278Q372,316,362.5,376Q353,436,296.5,400.5Q240,365,185,398Q130,431,98,386Q66,341,99,290.5Q132,240,104.5,193Q77,146,132.5,148Q188,150,214,147Q240,144,294.5,97.5Q349,51,354,111Q359,171,365.5,205.5Q372,240,372,278Z" />
+                                <image class="home__blob-img" xlink:href="../images/profile.jpg" />
+                        </svg> -->
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x="12" y="18" xlink:href="./images/home.jpg" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi I'm Mariga</h1>
+                        <h3 class="home__subtitle">Web Developer</h3>
+                        <p class="home__description">Passionate and results-driven web developer with a strong foundation in front-end and back-end technologies. Leveraging a keen eye for design and a commitment to delivering seamless user experiences, I specialize in crafting responsive and dynamic websites. Proficient in HTML, CSS, JavaScript,PHP, React Js and various frameworks, I thrive in collaborative environments, bringing creative solutions to complex problems. Constantly staying updated with the latest industry trends, I am dedicated to creating efficient, scalable, and visually appealing web applications that meet both client and user expectations.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+<!-- ============================ABOUT============================== -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="about__container container grid">
+                <img src="./images/mariga.jpeg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">Dynamic web developer with expertise in frontend and backend development
+                        delivering quality work.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">3+ </span>
+                            <span class="about__info-name">Years <br/> experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">7+</span>
+                            <span class="about__info-name">Completed <br/> projects</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="./Mariga Godfey Wanagi.pdf" class="button button--flex">
+                            Download Resume<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+<!-- ==========================SKILLS=============================== -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">SKILLS</h2>
+            <span class="section__subtitle">My Technical Level</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!-- SKILL 1 -->
+                    <div class="skills__content skills__open ">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Web Development</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fab fa-html5 skills__icon"></i> <br>
+                                        HTML</h3>
+                                </div>         
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fab fa-css3 skills__icon"></i> <br>
+                                        CSS</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fab fa-js-square skills__icon"></i> <br>
+                                        JavaSript</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fab fa-react skills__icon"></i> <br>
+                                        React Js</h3>
+                                </div>
+                            </div>
+                            
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fab fa-php skills__icon"></i> <br>
+                                        Php</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fab fa-laravel skills__icon"></i> <br>
+                                        Laravel</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fas fa-database skills__icon"></i> <br>
+                                        SQL</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <br/>
+
+                <!-- SKILL 2 -->
+                
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-robot skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Network Technician</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        
+                                        <i class="fas fa-network-wired skills__icon"></i> <br>
+                                        Networking</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fas fa-terminal skills__icon"></i> <br>
+                                        Scripting and Automation</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fas fa-fire-alt skills__icon"></i> <br>
+                                       Security (C++)</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fas fa-code skills__icon"></i> <br>
+                                        Creative Coding </h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">
+                                        <i class="fas fa-server skills__icon"></i> <br>
+                                        Server Management  </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+<!-- =============================QUALIFICATION======================================== -->
+        <section class="qualification section">
+            <h2 class="section__title">QUALIFICATION</h2>
+            <span class="section__subtitle">My Personal Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work Experience
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- ===================QUALIFICATION CONTENT 1=========================== -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- ===================QUALIFICATION 1=========================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Information Technology</h3>
+                                <span class="qualification__subtitle">Kenya - Moi University</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt">
+                                        Aug 2016 - Dec 2021
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        
+
+                        <!-- ===================QUALIFICATION 2=========================== -->
+                        <div class="qualification__data">
+                            <div></div>
+                            
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Software Development</h3>
+                                <span class="qualification__subtitle">Free Code Camp</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt">
+                                       Aug 2019-Jan 2020
+                                    </i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                     <!-- ===================QUALIFICATION CONTENT 2=========================== -->
+                     <div class="qualification__content" data-content id="work">
+                        <!-- ===================QUALIFICATION 1=========================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">ICT Officer</h3>
+                                <span class="qualification__subtitle">Nyeri County Government</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt">
+                                        2023 - Till recent
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- ===================QUALIFICATION 2=========================== -->
+                        <div class="qualification__data">
+                            <div></div>
+                            
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Network Technician</h3>
+                                <span class="qualification__subtitle">Fresh Products, Thika</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt">
+                                        Jan 2022-July 2023
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===================QUALIFICATION 3=========================== -->
+                       
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                                    <!-- ==================SERVICES======================= -->
+        <!-- <section class="services section" id="services">
+            <h2 class="section__title">Servives</h2>
+            <span class="section__subtitle">What I Offer</span>
+
+            <div class="services__container container grid">
+                        ==================SERVICES 1=======================
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-window-grid services__icon"></i>
+                        <h3 class="services__title">UI/UX <br> Designer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                </div>
+            </div>
+        </section> -->
+
+<!-- ========================PORTFOLIO ======================== -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- ========================PORTFOLIO 1======================== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./images/portfolo 4.JPG" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Travel Wale</h3>
+                            <p class="portfolio__description">Web application adaptable to all devices for the browsing
+                                and booking travel agencies.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+<!-- <br> <br> -->
+                    <!-- ========================PORTFOLIO 2======================== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./images/Port 1.JPG" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Ac Repair and Services</h3>
+                            <p class="portfolio__description"> Responsive web application for an Ac Repair and Services Management.
+                            </p>
+                           <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ========================PORTFOLIO 3======================== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./images/Portfolio 2.JPG" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Kagama Community</h3>
+                            <p class="portfolio__description"> A visually captivating news website and updates on latest on the Kagama Community.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+<br> <br>
+                <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+            </div> 
+        </section>
+
+                        <!-- ========================Testimonials======================== -->
+        <section class="testimonial section">
+            <h2 class="section__title">Testimonials</h2>
+            <span class="section__subtitle">What my clients say</span>
+
+            <div class="testimonial__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- =====================Testimonial 1===================== -->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="./images/Simon.jpeg" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">Simon</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">Had the pleasure of working with Mariga to develop my website.
+                            From initial consultation to the final product he demonstrated professionalism and creativity as he 
+                            understood my vision by transforming my ideas into a sleek and functional web application.
+                        </p>
+                    </div>
+
+                    <!-- =====================Testimonial 2===================== -->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="./images/Ephantus (1).jpeg" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">Ephantus Nderitu</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">
+                           Working with Mariga was a game changer for our online presence. He brought my ideas to life with precision 
+                           and creativity while adding a touch of innovation to really surpass our expectations.
+                        </p>
+                    </div>
+
+                   
+      
+
+                        <p class="testimonial__description">
+                            Teaching Mariga was a rewarding experience and its inspiring to see him grow into a skilled software developer. 
+                            His dedication and hunger to learn and master new skills were evident in class as he applied them to every project.
+                            Also his ability to collaborate with others sets him apart as he not only understands individual excellence but also the 
+                            importance of collective success.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
+        </section>
+
+                        <!-- ========================Contact Me======================== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Contact Me</h3>
+                            <span class="contact__subtitle">+254 715 397 084</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">freyzmariga@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form grid" onsubmit="sendEmail(); reset(); return false;" id="contact-form">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input" id="name" >
+                        </div>
+                        <div class="contact__content">
+                            <label  class="contact__label">Email</label>
+                            <input type="email" class="contact__input" id="email" >
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label class="contact__label">Project</label>
+                        <input type="text" class="contact__input" id="project" >
+                    </div>
+                    <div class="contact__content">
+                        <label class="contact__label">Message</label>
+                        <textarea id="message" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <button onclick="SendMail(); reset();" class="button button--flex" >Send Message</button>
+                        <!-- <a href="" class="button button--flex" id="btn" onclick="SendMail()">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </a> -->
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+                        <!-- ========================Footer======================== -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Mariga</h1>
+                    <span class="footer__subtitle">Fullstack Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    
+                    <a href="https://www.linkedin.com/in/godfrey-mariga-8b2bb2133" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="https://github.com/freyzmariga" target="_blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/koder_mariga" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 | Godfrey Mariga | All rights reserved</p>
+            
+        </div>
+    </footer>
+
+
+    <!-- Sroll Top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-circle-up scrollup__icon"></i>
+    </a>
+    
+
+
+    <!-- Swiper js -->
+    <script src="./swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="./main.js"></script>
+    <!-- Receive Email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('3b4OhSe3s7DE-GXIO');
+        })();
+    </script>
+
+<script type="text/javascript">
+    //Sending email
+function SendMail(){
+    var params = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        project : document.getElementById("project").value,
+        message : document.getElementById("message").value
+    }
+    emailjs.send("service_u3xmngi", "template_c4x5his", params).then(function (res){
+        alert("Your message has been sent");
+    })
+}
+</script>
+
+</body>
+</html>
